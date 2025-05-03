@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion - École 221</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen flex flex-col items-center justify-center font-sans overflow-hidden">
+
+  <!-- Arrière-plan avec image -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f'); filter: brightness(0.6);"></div>
+
+  <!-- Overlay sombre -->
+  <div class="absolute inset-0 bg-black opacity-30"></div>
+
+  <!-- Carte de connexion -->
+  <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 w-full max-w-sm border border-gray-200">
+    <div class="text-center mb-6">
+      <img src="logo.png" alt="Logo École 221" class="mx-auto h-12 mb-2" />
+      <h1 class="text-xl font-semibold text-gray-800">Bienvenue sur <span class="text-red-700 font-bold">ÉCOLE 221</span></h1>
+      <h2 class="text-md text-gray-600">Se connecter</h2>
+    </div>
+
+    <!-- Bouton Google -->
+    <button class="w-full flex items-center justify-center gap-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-200 transition mb-4">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-5 w-5" />
+      <span>Login with Google</span>
+    </button>
+
+    <!-- Formulaire -->
+    <form>
+      <div class="mb-4">
+        <label class="block text-sm text-gray-600 mb-1">Téléphone ou email</label>
+        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="ex: user@gmail.com" />
+      </div>
+
+      <div class="mb-2">
+        <label class="block text-sm text-gray-600 mb-1">Mot de passe</label>
+        <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="********" />
+      </div>
+
+      <div class="text-right text-sm mb-4">
+        <a href="#" class="text-blue-600 hover:underline">Mot de passe oublié ?</a>
+      </div>
+
+      <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">
+        Se connecter
+      </button>
+    </form>
+  </div>
+
+
+
+</body>
+</html>
